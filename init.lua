@@ -100,6 +100,6 @@ end
 -- set up global state stuff on the library here
 
 -- import objects for the library here
-libname.SimpleClass = require(path .. ".libname.core")
+libname.SimpleClass = require(path .. ".libname.SimpleClass")
 
 return libname

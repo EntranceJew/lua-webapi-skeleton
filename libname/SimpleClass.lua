@@ -2,6 +2,8 @@ local math_random = math.random
 if love and love.math and love.math.random then
 	math_random = love.math.random
 end
+local path = string.sub(..., 1, string.len(...) - string.len(".SimpleClass"))
+local libname = require(path .. ".libname.core")
 
 local SimpleClass = {
 	default = 'property'
